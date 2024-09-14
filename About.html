@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>University</title>
+</head>
+<body>
+  <section class="sub-header">
+<nav>
+  <a href="./index.html"><img src="./eduford_img/logo.png" alt=""></a>
+
+<div class="nav-link" id="navLinks">
+  <ul>
+    <i class="fa-regular fa-circle-xmark fa" onclick="hideMenu()"></i>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="About.html">ABOUT</a></li>
+    <li><a href="Course.html">COURSE</a></li>
+    <li><a href="Blog.html">BLOG</a></li>
+    <li><a href="Contact.html">CONTACT</a></li>
+  </ul>
+</div>
+<i class="fa-solid fa-bars fa" onclick="showMenu()"></i>
+</nav>
+
+<h1>ABOUT US</h1>
+  </section>
+
+<section class="about-us">
+  <div class="row">
+    <div class="about-col">
+      <h1>We are the world's largest University</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ducimus tenetur! Error rem asperiores, autem magni voluptatem doloribus. Nisi facilis commodi aliquid et. Repellat totam vero asperiores impedit excepturi harum unde molestias, aperiam nihil expedita soluta, ullam consectetur. Sit, quasi!</p>
+      <a href=""><button>Explore Now</button></a>
+    </div>
+
+    <div class="about-col">
+      <img src="./eduford_img/about.jpg" alt="">
+    </div>
+  </div>
+
+</section>
+ 
+
+
+  <section class="footer">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum obcaecati deserunt aperiam velit ratione?</p>
+
+    <div class="icons">
+      <i class="fa-brands fa-facebook fa"></i>
+      <i class="fa-brands fa-instagram fa"></i>
+      <i class="fa-brands fa-twitter fa"></i>
+      <i class="fa-brands fa-linkedin fa"></i>
+    </div>
+  </section>
+
+  <script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0"
+      navLinks.style.opacity = "1"
+    }
+
+    function hideMenu(){
+      navLinks.style.right = "-200px"
+      navLinks.style.opacity = "0"
+    }
+  </script>
+</body>
+</html>
